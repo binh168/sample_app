@@ -10,3 +10,9 @@
 #
 en:
   hello: "Hello world"
+
+  static_pages:
+    help:
+      help: "Help"
+    home:
+      home: "Sample App"
