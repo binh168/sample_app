@@ -10,7 +10,11 @@
 #
 en:
   hello: "Hello world"
-
+  
+  layouts:
+    application:
+      base_title: " Ruby on Rails Tutorial Sample App"
+  
   static_pages:
     help:
       help: "Help"
