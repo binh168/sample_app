@@ -10,3 +10,15 @@
 #
 en:
   hello: "Hello world"
+
+  static_pages:
+    help:
+      help: "Help"
+      introduce_help: "Get help on the Ruby on Rails Tutorial at the %{href1}. To get help on this sample app, see the %{href2}."
+      introduce_href1: "Rails Tutorial help page"
+      introduce_href2: "Ruby on Rails Tutorial"
+      
+    home:
+      home: "Sample App"
+      introduce_home: "This is the home page for the %{href} sample application."
+      introduce_href: "Ruby on Rails Tutorial"
