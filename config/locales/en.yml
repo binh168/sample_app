@@ -37,6 +37,8 @@ en:
     about:
       about: "About"
       introduce_about: "The Ruby on Rails tutorial is a book and screncast series to teach web development with Ruby on Rails. This is the sample application fo the tutorial."
+    news:
+      news: "News"
     login:
       login: "Log in"
   users:
