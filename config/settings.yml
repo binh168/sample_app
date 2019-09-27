@@ -1,3 +1,14 @@
-home: "https://www.railstutorial.org/"
-help1: "https://www.railstutorial.org/help"
-help2: "https://www.railstutorial.org/books"
+enabled_locales: ["en"]
+default: "http://localhost:3000/static_pages/home#"
+static_pages:
+  home_page:
+    home: "https://www.railstutorial.org/"
+    image_rails: "http://rubyonrails.org/"
+  help_page:
+    help1: "https://www.railstutorial.org/help"
+    help2: "https://www.railstutorial.org/books"
+  contact_page:
+    contact: "https://www.railstutorial.org/contact"
+layouts:
+  _footer:
+    news: "http://news.railstutorial.org/"
