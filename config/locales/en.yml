@@ -14,6 +14,9 @@ en:
   layouts:
     application:
       base_title: " Ruby on Rails Tutorial Sample App"
+      home_page: "Home"
+      help_page: "Help"
+      login_page: "Log in"
   
   static_pages:
     help:
@@ -26,3 +29,20 @@ en:
       home: "Sample App"
       introduce_home: "This is the home page for the %{href} sample application."
       introduce_href: "Ruby on Rails Tutorial"
+      rails_logo: "Rails logo"
+    contact:
+      contact: "Contact"
+      introduce_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_page: "contact page"
+    about:
+      about: "About"
+      introduce_about: "The Ruby on Rails tutorial is a book and screncast series to teach web development with Ruby on Rails. This is the sample application fo the tutorial."
+    news:
+      news: "News"
+    login:
+      login: "Log in"
+  users:
+    new:
+      signup: "Sign up"
+      signup_now: "Sign up now!"
+      signup_introduce: "This will be a signup page for new users."
