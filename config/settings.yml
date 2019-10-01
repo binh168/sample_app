@@ -1,4 +1,7 @@
 enabled_locales: ["en"]
+username_maximum: 50
+email_maximum: 250
+password_minimum: 6
 default: "http://localhost:3000/static_pages/home#"
 static_pages:
   home_page:
