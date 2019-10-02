@@ -15,3 +15,4 @@ static_pages:
 layouts:
   _footer:
     news: "http://news.railstutorial.org/"
+gavatar: "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"

@@ -45,4 +45,8 @@ en:
     new:
       signup: "Sign up"
       signup_now: "Sign up now!"
-      signup_introduce: "This will be a signup page for new users."
+      password_confirmation: "Confirmation"
+      submit: "Create my account"
+    create:
+      success_create_user: "Welcome to the Sample App!"
+      error_create_user: "Error"
