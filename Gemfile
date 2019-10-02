@@ -5,8 +5,9 @@ ruby "2.6.3"
 
 gem "rails", "~> 6.0.0"
 gem "bootstrap-sass", "3.4.1"
+gem "bcrypt",         "3.1.12"
 gem "config"
-gem 'rails-i18n'
+gem "rails-i18n"
 gem "sqlite3", "~> 1.4"
 gem "puma", "~> 3.11"
 gem "sass-rails", "~> 5"
