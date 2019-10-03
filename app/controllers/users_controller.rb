@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: [:show]
+  before_action :load_user, only: %i(show)
 
   def new
     @user = User.new
@@ -17,9 +17,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def show
-    @user
-  end
+  def show; end
 
   private
 
