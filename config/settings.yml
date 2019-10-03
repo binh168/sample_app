@@ -2,6 +2,7 @@ enabled_locales: ["en"]
 username_maximum: 50
 email_maximum: 250
 password_minimum: 6
+size_gavatar: 80
 default: "http://localhost:3000/static_pages/home#"
 static_pages:
   home_page:
@@ -15,3 +16,4 @@ static_pages:
 layouts:
   _footer:
     news: "http://news.railstutorial.org/"
+gavatar: "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
