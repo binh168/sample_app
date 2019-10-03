@@ -53,4 +53,4 @@ en:
   shared:
     error_messages:
       error_create_user: "Error Create User"
-      cotain_error: "The form contains"
+      cotains_error: "The form contains"

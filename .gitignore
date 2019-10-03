@@ -21,6 +21,7 @@
 /storage/*
 !/storage/.keep
 /test/*
+/.vscode/*
 
 /node_modules
 /yarn-error.log
