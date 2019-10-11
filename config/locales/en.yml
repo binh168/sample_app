@@ -68,6 +68,7 @@ en:
     new:
       login: "Log in"
       new_users: "New user?"
+      remember: "Remember me on this computer"
     create:
       danger: "Invalid email/password combination"
 
