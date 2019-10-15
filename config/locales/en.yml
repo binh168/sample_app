@@ -50,6 +50,9 @@ en:
       login: "Log in"
 
   users:
+    index:
+      all_users: "All users"
+      user: "user"
     new:
       signup: "Sign up"
       signup_now: "Sign up now!"
@@ -58,6 +61,18 @@ en:
     create:
       success: "Welcome to the Sample App!"
       error: "error"
+    edit:
+      edit: "Edit user"
+      update: "Update your profile"
+      password_confirmation: "Confirmation"
+      save_button: "Save changes"
+      change: "change"
+      danger_loggin: "Please log in."
+    update:
+      success: "Profile updated"
+      danger_loggin: "Please log in."
+    destroy:
+      deleted: "User deleted"
 
   shared:
     error_messages:
