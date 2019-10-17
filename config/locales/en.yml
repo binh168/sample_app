@@ -37,13 +37,16 @@ en:
       introduce_home: "This is the home page for the %{href} sample application."
       introduce_href: "Ruby on Rails Tutorial"
       rails_logo: "Rails logo"
+
     contact:
       contact: "Contact"
       introduce_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
+
     about:
       about: "About"
       introduce_about: "The Ruby on Rails tutorial is a book and screncast series to teach web development with Ruby on Rails. This is the sample application fo the tutorial."
+    
     news:
       news: "News"
     login:
@@ -53,14 +56,17 @@ en:
     index:
       all_users: "All users"
       user: "user"
+
     new:
       signup: "Sign up"
       signup_now: "Sign up now!"
       password_confirmation: "Confirmation"
       submit: "Create my account"
+
     create:
       success: "Welcome to the Sample App!"
       error: "error"
+
     edit:
       edit: "Edit user"
       update: "Update your profile"
@@ -68,11 +74,17 @@ en:
       save_button: "Save changes"
       change: "change"
       danger_loggin: "Please log in."
+
     update:
       success: "Profile updated"
       danger_loggin: "Please log in."
+
     destroy:
       deleted: "User deleted"
+
+    user:
+      delete: "delete"
+      sure: "You sure?"
 
   shared:
     error_messages:

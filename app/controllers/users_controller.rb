@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.all.page(params[:page]).per(5)
   end
 
   def new
@@ -55,11 +55,10 @@ class UsersController < ApplicationController
   end
 
   def logged_in_user
-    unless logged_in?
-      store_location
-      flash.now[:danger] = t(".danger_loggin")
-      redirect_to login_url
-    end
+    return if logged_in?
+    store_location
+    flash.now[:danger] = t(".danger_loggin")
+    redirect_to login_url
   end
 
   def correct_user

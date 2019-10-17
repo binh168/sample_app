@@ -65,8 +65,6 @@ GEM
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
-    bootstrap-will_paginate (1.0.0)
-      will_paginate
     builder (3.2.3)
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
@@ -117,6 +115,21 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
+    kaminari (1.1.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.1.1)
+      kaminari-activerecord (= 1.1.1)
+      kaminari-core (= 1.1.1)
+    kaminari-actionview (1.1.1)
+      actionview
+      kaminari-core (= 1.1.1)
+    kaminari-activerecord (1.1.1)
+      activerecord
+      kaminari-core (= 1.1.1)
+    kaminari-bootstrap (3.0.1)
+      kaminari (>= 0.13.0)
+      rails
+    kaminari-core (1.1.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -222,7 +235,6 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
-    will_paginate (3.2.1)
     zeitwerk (2.2.0)
 
 PLATFORMS
@@ -232,11 +244,12 @@ DEPENDENCIES
   bcrypt (= 3.1.12)
   bootsnap (>= 1.4.2)
   bootstrap-sass
-  bootstrap-will_paginate
   byebug
   config
   faker
   jbuilder (~> 2.7)
+  kaminari
+  kaminari-bootstrap
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 6.0.0)
@@ -249,7 +262,6 @@ DEPENDENCIES
   tzinfo-data
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
-  will_paginate
 
 RUBY VERSION
    ruby 2.6.3p62
