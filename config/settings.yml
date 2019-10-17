@@ -4,6 +4,7 @@ email_maximum: 250
 password_minimum: 6
 size_gravatar: 80
 size_gravatar2: 50
+user_per_page: 5
 default: "http://localhost:3000/static_pages/home#"
 static_pages:
   home_page:

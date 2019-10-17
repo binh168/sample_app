@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: %i(show edit update)
+  before_action :load_user, only: %i(show edit update destroy)
   before_action :logged_in_user, only: %i(index edit update)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
 
   def index
-    @users = User.all.page(params[:page]).per(5)
+    @users = User.order(:name).page(params[:page]).per Settings.user_per_page
   end
 
   def new
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find_by(params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:success] = t(".danger")
     redirect_to users_url
   end
 
@@ -52,6 +52,9 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
+    return  if @user
+    flash[:danger] = "Not found user"
+    redirect_to root_url
   end
 
   def logged_in_user
@@ -62,7 +65,7 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    @user = User.find_by params[:id]
+    @user = User.find_by id: params[:id]
     redirect_to(root_url) unless current_user?(@user)
   end
 

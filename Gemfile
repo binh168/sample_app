@@ -5,10 +5,10 @@ ruby "2.6.3"
 
 gem "rails", "~> 6.0.0"
 gem "bootstrap-sass"
-gem "faker"
+gem "ffaker"
 gem "kaminari"
-gem 'kaminari-bootstrap'
-gem "bcrypt",         "3.1.12"
+gem "kaminari-bootstrap"
+gem "bcrypt", "3.1.12"
 gem "config"
 gem "rails-i18n"
 gem "sqlite3", "~> 1.4"

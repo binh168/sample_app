@@ -67,6 +67,9 @@ en:
       success: "Welcome to the Sample App!"
       error: "error"
 
+    show:
+       danger: "User deleted"
+
     edit:
       edit: "Edit user"
       update: "Update your profile"
@@ -74,13 +77,16 @@ en:
       save_button: "Save changes"
       change: "change"
       danger_loggin: "Please log in."
+      danger: "User deleted"
 
     update:
       success: "Profile updated"
       danger_loggin: "Please log in."
+      danger: "User deleted"
 
     destroy:
       deleted: "User deleted"
+      danger: "User deleted"
 
     user:
       delete: "delete"
@@ -99,3 +105,16 @@ en:
     create:
       danger: "Invalid email/password combination"
 
+  helpers:
+    label:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        
+      session:
+        email: "Email"
+        password: "Password"
+        remember_me: "Remember me"
+        
