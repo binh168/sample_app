@@ -65,6 +65,7 @@ en:
     create:
       success: "Welcome to the Sample App!"
       error: "error"
+      info: "Please check your email to activate your account."
       
     show:
       danger: "User deleted"
@@ -113,3 +114,15 @@ en:
       password: "Password"
     create:
       danger: "Invalid email/password combination"
+      messeage: "Account not activated. Check your email for the activation link."
+      
+  account_activations:
+    edit:
+      active: "Activate"
+      wellcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      sample_app: "Sample App"
+      hi: "Hi"
+      success: "Account activated!"
+      danger: "Invalid activation link"
+      subject: "Account activation"
+

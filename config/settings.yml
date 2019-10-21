@@ -5,6 +5,7 @@ password_minimum: 6
 size_gravatar: 80
 size_gravatar2: 50
 user_per_page: 5
+validate_email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 default: "http://localhost:3000/static_pages/home#"
 static_pages:
   home_page:
