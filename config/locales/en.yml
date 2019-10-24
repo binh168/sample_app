@@ -112,17 +112,59 @@ en:
       remember: "Remember me on this computer"
       email: "Email"
       password: "Password"
+      forgot_password: "(forgot password)"
+
     create:
       danger: "Invalid email/password combination"
       messeage: "Account not activated. Check your email for the activation link."
       
   account_activations:
     edit:
-      active: "Activate"
-      wellcome: "Welcome to the Sample App! Click on the link below to activate your account:"
-      sample_app: "Sample App"
-      hi: "Hi"
       success: "Account activated!"
       danger: "Invalid activation link"
       subject: "Account activation"
 
+    create:
+      danger: "Invalid email/password combination"
+
+  password_resets:
+    new:
+      forgot_password: "Fogot password"
+      submit: "Submit"
+      email: "Emails"
+      
+      check_expiration: "Password reset has expired."
+    
+    edit:
+      reset_password: "Reset password"
+      update: "Update password"
+      subject: "Password reset"
+      check_expiration: "Password reset has expired."
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+
+    update:
+      success: "Password has been reset."
+      error: "can't be empty"
+      
+    create:
+      info: "Email sent with password reset instructions"
+      danger: "Email address not found"
+
+  user_mailer:
+    account_activation:
+      active: "Activate"
+      wellcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      sample_app: "Sample App"
+      hi: "Hi"
+
+    password_reset:
+      password_reset: "Password reset"
+      intro1: "To reset your password click the link below:"
+      reset_password: "Reset password"
+      intro2: "This link will expire in two hours."
+      intro3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      text_intro1: "To reset your password click the link below:"
+      text_intro2: "This link will expire in two hours."
+      text_intro3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
