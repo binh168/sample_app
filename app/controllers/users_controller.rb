@@ -16,15 +16,17 @@ class UsersController < ApplicationController
 
     if @user.save
       @user.send_activation_email
-      flash[:info] = t".info"
+      flash[:info] = t ".info"
       redirect_to root_path
     else
-      flash.now[:danger] = t(".error")
+      flash.now[:danger] = t ".error"
       render :new
     end
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.order_micropost.page(params[:page]).per Settings.post_per_page
+  end
 
   def edit; end
 
@@ -38,15 +40,14 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @destroy_user = @user.destroy
+    @user.destroy
 
-    if @destroy_user.destroyed?
-      flash[:success] = t".danger"
-      redirect_to users_url
+    if @user.destroyed?
+      flash[:success] = t ".danger"
     else
-      flash[:error] = t".error"
-      redirect_to users_url
+      flash[:error] = t ".error"
     end
+    redirect_to users_path
   end
 
   private
@@ -57,24 +58,18 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
+    
     return  if @user
-    flash[:danger] = t".not_found_user"
-    redirect_to root_url
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash.now[:danger] = t(".danger_loggin")
-    redirect_to login_url
+    flash[:danger] = t ".not_found_user"
+    redirect_to root_path
   end
 
   def correct_user
     @user = User.find_by id: params[:id]
-    redirect_to(root_url) unless current_user?(@user)
+    redirect_to(root_path) unless current_user?(@user)
   end
 
   def admin_user
-    redirect_to root_url unless current_user.admin?
+    redirect_to root_path unless current_user.admin?
   end
 end

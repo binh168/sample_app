@@ -7,6 +7,15 @@ size_gravatar2: 50
 user_per_page: 5
 reset_sent_at: 2
 validate_email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+size_gavatar: 80
+content_maximum: 140
+gavatar_micropost: 50
+post_per_page: 5
+feed_item: 5
+picture_size: 1
+gb: 1024
+resize_to_limit: 400
+image_file: "image/jpeg,image/gif,image/png" 
 default: "http://localhost:3000/static_pages/home#"
 static_pages:
   home_page:

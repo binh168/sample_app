@@ -10,11 +10,11 @@ class SessionsController < ApplicationController
         params[:session][:remember_me] == "1" ? remember(user) : forget(user)
         redirect_to user
       else
-        flash[:warning] = t".messeage"
+        flash[:warning] = t ".messeage"
         redirect_to root_path
       end
     else
-      flash.now[:danger] = t".danger"
+      flash.now[:danger] = t ".danger"
       render :new
     end
   end

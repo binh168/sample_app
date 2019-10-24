@@ -1,4 +1,20 @@
 <% provide :title, t(".home") %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t".feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
 <div class="center jumbotron">
   <h1><%= t".home" %></h1>
 
@@ -11,3 +27,4 @@
   <%= link_to t("signup_now"), signup_path , class: "btn btn-lg btn-primary" %>
 </div>
 <%= link_to image_tag("rails.png", alt: t(".rails_logo"), width: "200px"), Settings.static_pages.home_page.image_rails %>
+<% end %>
