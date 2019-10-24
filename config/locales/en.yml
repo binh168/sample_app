@@ -37,19 +37,26 @@ en:
       introduce_home: "This is the home page for the %{href} sample application."
       introduce_href: "Ruby on Rails Tutorial"
       rails_logo: "Rails logo"
+
     contact:
       contact: "Contact"
       introduce_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
+
     about:
       about: "About"
       introduce_about: "The Ruby on Rails tutorial is a book and screncast series to teach web development with Ruby on Rails. This is the sample application fo the tutorial."
+    
     news:
       news: "News"
     login:
       login: "Log in"
 
   users:
+    index:
+      all_users: "All users"
+      user: "user"
+
     new:
       signup: "Sign up"
       signup_now: "Sign up now!"
@@ -58,6 +65,39 @@ en:
     create:
       success: "Welcome to the Sample App!"
       error: "error"
+      
+    show:
+      danger: "User deleted"
+      not_found_user: "Not found user"
+
+    edit:
+      edit: "Edit user"
+      update: "Update your profile"
+      password_confirmation: "Confirmation"
+      save_button: "Save changes"
+      change: "change"
+      danger_loggin: "Please log in."
+      danger: "User deleted"
+
+    update:
+      success: "Profile updated"
+      danger_loggin: "Please log in."
+      danger: "User deleted"
+
+    destroy:
+      deleted: "User deleted"
+      danger: "User deleted"
+      error: "Destroy user fail"
+
+    user:
+      delete: "delete"
+      sure: "You sure?"
+
+    form:
+      name: "Name"
+      email: Email
+      password: "Password"
+      pass_confirmation: "Password confirmation"
 
   shared:
     error_messages:
@@ -69,6 +109,7 @@ en:
       login: "Log in"
       new_users: "New user?"
       remember: "Remember me on this computer"
+      email: "Email"
+      password: "Password"
     create:
       danger: "Invalid email/password combination"
-
