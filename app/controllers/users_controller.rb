@@ -5,7 +5,11 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
 
   def index
+<<<<<<< HEAD
     @users = User.order(:name).page(params[:page]).per Settings.user_per_page
+=======
+    @users = User.order(:name).page(params[:page]).per(Settings.user_per_page)
+>>>>>>> 75df905... Finish user edit, update, index, and destroy actions ver3
   end
 
   def new

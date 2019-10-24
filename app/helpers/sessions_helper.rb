@@ -23,7 +23,11 @@ module SessionsHelper
   end
 
   def current_user? user
+<<<<<<< HEAD
     user&. == current_user
+=======
+    user && user == current_user
+>>>>>>> 75df905... Finish user edit, update, index, and destroy actions ver3
   end
 
   def logged_in?
