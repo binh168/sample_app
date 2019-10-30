@@ -3,9 +3,8 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: %i(index edit update)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
-
   def index
-    @users = User.order(:name).page(params[:page]).per Settings.user_per_page
+    @users = User.activated.order_user.page(params[:page]).per Settings.user_per_page
   end
 
   def new
@@ -13,12 +12,12 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t(".success")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t".info"
+      redirect_to root_path
     else
       flash.now[:danger] = t(".error")
       render :new
