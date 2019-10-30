@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: %i(index edit update)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
+  
   def index
     @users = User.order_user.order_user.page(params[:page]).per Settings.user_per_page
   end

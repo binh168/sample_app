@@ -1,8 +1,8 @@
 <% provide :title, t(".help") %>
 <h1><%= t".help" %></h1>
 <p>
-  <%= t(".introduce_help", 
-    href1: link_to(t(".introduce_href1"), Settings.static_pages.help_page.help1), 
-    href2: link_to(t(".introduce_href2"), Settings.static_pages.home_page.help2)
-    ).html_safe %>
+  <%= t(".introduce_help1") %>
+  <%= link_to t(".introduce_href1"), Settings.static_pages.help_page.help1 %> 
+  <%= t(".introduce_help2") %>
+  <%= link_to t(".introduce_href2"), Settings.static_pages.home_page.help2 %>
 </p>
