@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   def index
-    @users = User.activated.order_user.page(params[:page]).per Settings.user_per_page
+    @users = User.order_user.order_user.page(params[:page]).per Settings.user_per_page
   end
 
   def new
