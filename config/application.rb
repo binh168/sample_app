@@ -31,5 +31,10 @@ module SampleApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # It's a good idea to set a default
+    
+    # If you don't specify these, I18n::JS will generate files for all locales
+    config.i18n.available_locales = %w(en)
   end
 end

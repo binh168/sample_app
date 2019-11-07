@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   USER_PARAMS = %i(name email password password_confirmation).freeze
   PASSWORD_RESET_PARAMS = %i(password password_confirmation).freeze

@@ -10,6 +10,9 @@
 #
 en:
   hello: "Hello world"
+  alert: "Maximum file size is 5MB. Please choose a smaller file."
+  picture_size: 1
+  gb: 1024
   
   layouts:
     application:
@@ -37,6 +40,7 @@ en:
       introduce_home: "This is the home page for the %{href} sample application."
       introduce_href: "Ruby on Rails Tutorial"
       rails_logo: "Rails logo"
+      feed: "Micropost Feed"
 
     contact:
       contact: "Contact"
@@ -49,6 +53,7 @@ en:
     
     news:
       news: "News"
+
     login:
       login: "Log in"
 
@@ -62,6 +67,7 @@ en:
       signup_now: "Sign up now!"
       password_confirmation: "Confirmation"
       submit: "Create my account"
+
     create:
       success: "Welcome to the Sample App!"
       error: "error"
@@ -70,6 +76,7 @@ en:
     show:
       danger: "User deleted"
       not_found_user: "Not found user"
+      micropost: "Micropost"
 
     edit:
       edit: "Edit user"
@@ -104,6 +111,14 @@ en:
     error_messages:
       error_create_user: "Error Create User"
       cotains_error: "The form contains"
+      
+    user_info:
+      view_profile: "View my profile"
+
+    micropost_form: 
+      post: "Post"
+      placeholder: "Compose new micropost..."
+     
 
   sessions:
     new:
@@ -132,7 +147,6 @@ en:
       forgot_password: "Fogot password"
       submit: "Submit"
       email: "Emails"
-      
       check_expiration: "Password reset has expired."
     
     edit:
@@ -168,3 +182,20 @@ en:
       text_intro1: "To reset your password click the link below:"
       text_intro2: "This link will expire in two hours."
       text_intro3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  
+  microposts:
+    micropost:
+      posted: "Posted "
+      ago: " ago."
+      delete: "Delete"
+      confirm: "You sure?"
+
+    create:
+      danger_loggin: "Please log in."
+      micropost_created: "Micropost created!"
+      picture_size: "should be less than 5MB"
+
+    destroy:
+      danger_loggin: "Please log in."
+      success: "Micropost deleted"
+      danger: "Delete micropost fail" 
