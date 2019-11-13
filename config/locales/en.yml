@@ -199,3 +199,13 @@ en:
       danger_loggin: "Please log in."
       success: "Micropost deleted"
       danger: "Delete micropost fail" 
+
+  followers:
+    index:
+      title_follower: "Followers"
+      danger: "User not found"
+
+  followings:
+    index:
+      title_following: "Following"
+      danger: "User not found"
