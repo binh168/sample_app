@@ -36,5 +36,7 @@ module SampleApp
     
     # If you don't specify these, I18n::JS will generate files for all locales
     config.i18n.available_locales = %w(en)
+    # Include the authenticity token in remote forms.
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end

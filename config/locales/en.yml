@@ -31,13 +31,15 @@ en:
   static_pages:
     help:
       help: "Help"
-      introduce_help: "Get help on the Ruby on Rails Tutorial at the %{href1}. To get help on this sample app, see the %{href2}."
+      introduce_help1: "Get help on the Ruby on Rails Tutorial at the "
+      introduce_help2: "To get help on this sample app, see the "
       introduce_href1: "Rails Tutorial help page"
       introduce_href2: "Ruby on Rails Tutorial"
       
     home:
       home: "Sample App"
-      introduce_home: "This is the home page for the %{href} sample application."
+      introduce_home1: "This is the home page for the"
+      introduce_home2: "sample application."
       introduce_href: "Ruby on Rails Tutorial"
       rails_logo: "Rails logo"
       feed: "Micropost Feed"
@@ -107,6 +109,16 @@ en:
       password: "Password"
       pass_confirmation: "Password confirmation"
 
+    follow:
+      submit: "Follow"
+
+    unfollow:
+      submit: "Unfollow"
+
+    show_follow:
+      view_profile: "View my profile"
+      microposts: "Microposts:"
+
   shared:
     error_messages:
       error_create_user: "Error Create User"
@@ -119,6 +131,9 @@ en:
       post: "Post"
       placeholder: "Compose new micropost..."
      
+    stats:
+      followers: "followers"
+      following: "following"
 
   sessions:
     new:

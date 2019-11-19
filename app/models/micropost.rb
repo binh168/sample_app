@@ -8,6 +8,7 @@ class Micropost < ApplicationRecord
   validate  :picture_size
 
   scope :order_micropost, ->{order created_at: :desc}
+  scope :feed, ->(following_ids){where user_id: following_ids}
 
   private
 

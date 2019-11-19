@@ -6,6 +6,7 @@ size_gravatar: 80
 size_gravatar2: 50
 user_per_page: 5
 reset_sent_at: 2
+follow_gavatar: 30
 validate_email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 size_gavatar: 80
 content_maximum: 140
